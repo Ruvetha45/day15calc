@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <!-- Add Bootstrap CSS link -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    /* Add your custom CSS styles here if needed */
+  </style>
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-4 offset-md-4">
+        <table class="table table-bordered text-center">
+          <tr>
+            <td colspan="4">
+              <input type="text" id="display" class="form-control text-right" readonly>
+            </td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('7')">7</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('8')">8</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('9')">9</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('+')">+</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('4')">4</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('5')">5</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('6')">6</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('-')">-</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('1')">1</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('2')">2</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('3')">3</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('*')">*</button></td>
+          </tr>
+          <tr>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('0')">0</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('.')">.</button></td>
+            <td><button class="btn btn-block btn-block" onclick="calculate()">=</button></td>
+            <td><button class="btn btn-block btn-block" onclick="appendToDisplay('%')">%</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="./script.js">
+   
+  </script>
+</body>
+</html>
